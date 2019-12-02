@@ -32,14 +32,14 @@ famous-peeps$ npm run dev
 
 ## Build and run your container image
 
-*Note: It may be necessary to clear out your node_modules/ folder if you get an error in the docker build command*
-
 ```
 famous-peeps$ docker build -t docker-famous-peeps:latest .
+```
+```
 famous-peeps$ docker run --init -i -p 3000:3000 docker-famous-peeps:latest
 ```
 
-## Create your AWS infrastructure
+## Create and configure your AWS infrastructure
 
 *Caution: Delete your AWS resources after you are done with the demo so you don't incur additional charges.*
 
@@ -57,3 +57,5 @@ Log into your AWS console, go to ECR and enable scan on push for your newly crea
 [AWS Fargate CDK sample](https://docs.aws.amazon.com/cdk/latest/guide/ecs_example.html)
 
 [A comprehensive serveless application demo in AWS](https://github.com/aws-samples/aws-cdk-changelogs-demo)
+
+ECR Image Scanning: Rescan [Code](https://github.com/aws-samples/amazon-ecr-continuous-scan) and [blog](https://aws.amazon.com/blogs/containers/amazon-ecr-native-container-image-scanning/)
