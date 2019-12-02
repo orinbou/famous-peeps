@@ -1,0 +1,31 @@
+{
+  "name": "famous-peeps",
+  "version": "1.0.0",
+  "description": "List movies starring various famous people",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "dev": "nodemon app.js",
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy"
+  },
+  "author": "omarpaul@amazon.com",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-cdk/aws-ec2": "^1.18.0",
+    "@aws-cdk/aws-ecr": "^1.18.0",
+    "@aws-cdk/aws-ecs": "^1.18.0",
+    "@aws-cdk/aws-ecs-patterns": "^1.18.0",
+    "@aws-cdk/core": "^1.18.0",
+    "koa": "^2.11.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^7.4.0",
+    "nodemon": "^2.0.1"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2",
+    "aws-cdk": "^1.18.0"
+  }
+}

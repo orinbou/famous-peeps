@@ -1,0 +1,6 @@
+node_modules/
+.vscode/
+cdk.out/
+.DS_Store
+cdk.context.json
+.code-workspace
