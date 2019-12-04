@@ -48,7 +48,9 @@ Create the AWS resources to deploy this app to.  This assumes you have configure
 famous-peeps$ npm run deploy
 ```
 
-Log into your AWS console, go to ECR and enable scan on push for your newly created Repository
+Now,
+1) Log into your AWS console, go to ECR and enable scan on push for your newly created Repository
+2) 
 
 ## References
 
