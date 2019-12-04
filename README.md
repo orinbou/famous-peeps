@@ -50,7 +50,10 @@ famous-peeps$ npm run deploy
 
 Now,
 1) Log into your AWS console, go to ECR and enable scan on push for your newly created Repository
-2) 
+2) Go to your new repository, click 'View Push Commands'
+3) Copy the login command and run it from the command line
+4) Tag your image for ECR
+5) Push your image to ECR
 
 ## References
 
