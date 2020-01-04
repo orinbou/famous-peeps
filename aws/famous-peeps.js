@@ -22,7 +22,9 @@ class FamousPeepsStack extends cdk.Stack {
 
     // ecr repository
     // @todo tag immutability and scan on push options? 
-    const fpRepo = new ecr.Repository(this, "famousPeepsRepo");
+    const fpRepo = new ecr.Repository(this, "famousPeepsRepo", {
+      removalPolicy: "destroy"
+    });
 
     // fargate app load balanced service
     /*const fpService = new ecsPatterns.ApplicationLoadBalancedFargateService(this, "famousPeepsDemoService", {
